@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velkommen til vår butikk, oppdag våre beste produkter og kategorier.">
+  <title>Nettside - Forside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js" defer></script>
+<body>
+ 
+  <!-- Header -->
+<header>
+  <div class="logo"><a href="index.html">BORZ</a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="product.html">Produkter</a></li>
+      <li><a href="#categories">Kategorier</a></li>
+      <li><a href="#footer">Kontakt oss</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Søke Felt -->
+  <div class="search-bar">
+    <form action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Søk her..." aria-label="Søk">
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <div class="header-icons">
+    <a href="user.html"><img src="Ikoner/Ikoner/user-solid.svg" alt="Bruker" title="Min profil"></a>
+    <a href="checkout.html" class="cart-icon">
+      <img src="Ikoner/Ikoner/cart-shopping-solid.svg" alt="Handlekurv" title="Handlekurv">
+    </a>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <main>
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="Images/Witeslider.jpg" alt="Whiteslider">
+          <div class="text">
+            <h1>Velkommen til vår butikk</h1>
+            <p>Oppdag det beste vi har å tilby</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="Images/Witeslider.jpg" alt="Whiteslider">
+          <div class="text">
+            <h1>Utrolig kvalitet</h1>
+            <p>Finn dine favoritter i dag</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="Images/Witeslider.jpg" alt="Whiteslider">
+          <div class="text">
+            <h1>Sesongens trender</h1>
+            <p>Gjør en smart investering</p>
+          </div>
+        </div>
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+    
+    
+    <!-- Produkter Seksjon -->
+    <section class="products-section">
+      <h2>Våre mest populære produkter</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke1.webp" alt="Patagonia dunjakke">
+            <h3>Patagonia dunjakke</h3>
+            <p>Kr 1999</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke2.webp" alt="RevolutionRace Igloo jakke">
+            <h3>RevolutionRace Igloo jakke</h3>
+            <p>Kr 2499</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke3.webp" alt="Stormberg jakke">
+            <h3>Stormberg jakke</h3>
+            <p>Kr 1799</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke4.webp" alt="The North Face dunjakke">
+            <h3>The North Face dunjakke</h3>
+            <p>Kr 3299</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke2.webp" alt="Mountain Equipment jakke">
+            <h3>Mountain Equipment jakke</h3>
+            <p>Kr 2999</p>
+          </a>
+        </div>
+        <div class="product-card">
+          <a href="product.html">
+            <img src="Images/Jakke1.webp" alt="Rab vinterjakke">
+            <h3>Rab vinterjakke</h3>
+            <p>Kr 1499</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Kategorier Seksjon -->
+    <section id="categories" class="categories-section">
+      <h2>Våre beste kategorier</h2>
+      <div class="categories-grid">
+        <div class="category-card">
+          <img src="Images/Herreklær.webp" alt="Herreklær">
+          <h3>Herreklær</h3>
+        </div>
+        <div class="category-card">
+          <img src="Images/Dameklær.webp" alt="Dameklær">
+          <h3>Dameklær</h3>
+        </div>
+        <div class="category-card">
+          <img src="Images/Sko.jpg" alt="Sko">
+          <h3>Sko</h3>
+        </div>
+        <div class="category-card">
+          <img src="Images/Tilbehør.webp" alt="Tilbehør">
+          <h3>Tilbehør</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Anmeldelser Seksjon -->
+<section class="reviews-section">
+  <h2>Anmeldelser</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <img src="Images/Robert Nordmann.webp" alt="Robert Nordmann" class="reviewer-image">
+      <h3>Robert Nordmann</h3>
+      <p>Fantastisk kvalitet og rask levering!</p>
+      <div class="review-rating">⭐️⭐️⭐️⭐️⭐️</div>
+    </div>
+    <div class="review-card">
+      <img src="Images/Maria Hansen.avif" alt="Maria Hansen" class="reviewer-image">
+      <h3>Maria Hansen</h3>
+      <p>Veldig fornøyd, vil handle her igjen!</p>
+      <div class="review-rating">⭐️⭐️⭐️⭐️☆</div>
+    </div>
+    <div class="review-card">
+      <img src="Images/Kari Olsen.jpg" alt="Kari Olsen" class="reviewer-image">
+      <h3>Kari Olsen</h3>
+      <p>Rask levering og utmerket service.</p>
+      <div class="review-rating">⭐️⭐️⭐️⭐️⭐️</div>
+    </div>
+    <div class="review-card">
+      <img src="Images/John Larsen.jpg" alt="John Larsen" class="reviewer-image">
+      <h3>John Larsen</h3>
+      <p>Overgikk forventningene mine.</p>
+      <div class="review-rating">⭐️⭐️⭐️⭐️☆</div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>BORZ</h3>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><strong>Telefon:</strong> 69 00 80 00</p>
+        <p><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+        <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+      </div>
+      <div class="footer-links">
+        <h4>Snarveier</h4>
+        <ul>
+          <li><a href="products.html">Produkter</a></li>
+          <li><a href="categories.html">Kategorier</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Sosiale medier</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for slider -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".slide");
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      let currentIndex = 0;
+
+      const showSlide = (index) => {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? "block" : "none";
+        });
+      };
+
+      const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      };
+
+      const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      };
+
+      nextButton.addEventListener("click", nextSlide);
+      prevButton.addEventListener("click", prevSlide);
+
+      showSlide(currentIndex);
+    });
+  </script>
+</body>
+</html>

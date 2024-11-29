@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Velkommen til vår butikk, oppdag våre beste produkter og kategorier.">
+  <title>Nettside - Forside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- Header -->
+<header>
+  <div class="logo"><a href="index.html">BORZ</a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="product.html">Produkter</a></li>
+      <li><a href="index.html#categories">Kategorier</a></li>
+      <li><a href="#footer">Kontakt oss</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Søke Felt -->
+  <div class="search-bar">
+    <form action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Søk her..." aria-label="Søk">
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <div class="header-icons">
+    <a href="user.html"><img src="Ikoner/Ikoner/user-solid.svg" alt="Bruker" title="Min profil"></a>
+    <a href="checkout.html" class="cart-icon">
+      <img src="Ikoner/Ikoner/cart-shopping-solid.svg" alt="Handlekurv" title="Handlekurv">
+    </a>
+  </div>
+</header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="index.html">Hjem</a> > <a href="#">Kategori</a> > <span>Produktnavn</span>
+  </nav>
+
+  <!-- Produktseksjon -->
+  <main class="product-page">
+    <div class="product-container">
+        <!-- Venstre: Produktbilder -->
+        <div class="product-images">
+          <div class="main-image">
+            <img src="Images/Jakke1.webp" alt="Hovedbilde">
+          </div>
+          <div class="thumbnail-images">
+            <img src="Images/Jakke1.webp" alt="Bilde 1">
+            <img src="Images/Jakke1.webp" alt="Bilde 2">
+            <img src="Images/Jakke1.webp" alt="Bilde 3">
+          </div>
+        </div>
+      
+        <!-- Høyre: Produktinformasjon -->
+        <div class="product-info">
+          <h1>Patagonia dunjakke</h1>
+          <p class="price">1999kr inkl. mva.</p>
+          <p>Farge: <span>Svart</span></p>
+          <label for="size">Velg størrelse:</label>
+          <select id="size">
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <button class="add-to-cart">Legg i handlekurv</button>
+          <button class="favorite">♥</button>
+          <details>
+            <summary>Materiale og vedlikehold</summary>
+            <p>100% bomull. Vaskes på 30°C.</p>
+          </details>
+          <details>
+            <summary>Produktdetaljer</summary>
+            <p>Produktet har en klassisk design, perfekt for enhver anledning.</p>
+          </details>
+          <details>
+            <summary>Størrelsestabell</summary>
+            <p>Se detaljer for passende størrelser.</p>
+          </details>
+        </div>
+      </div>
+
+    <!-- Lignende Produkter -->
+    <section class="similar-products">
+      <h2>Lignende produkter</h2>
+      <div class="similar-grid">
+        <div class="product-card">
+          <img src="Images/Jakke2.webp" alt="Lignende produkt 1">
+          <h3>Mountain Equipment jakke</h3>
+          <p>Kr 2999</p>
+          <p>⭐️⭐️⭐️⭐️☆ 12 anmeldelser</p>
+        </div>
+        <div class="product-card">
+          <img src="Images/Jakke3.webp" alt="Lignende produkt 2">
+          <h3>Stormberg jakke</h3>
+          <p>Kr 1799</p>
+          <p>⭐️⭐️⭐️⭐️☆ 23 anmeldelser</p>
+        </div>
+        <div class="product-card">
+          <img src="Images/Jakke1.webp" alt="Lignende produkt 3">
+          <h3>Rab vinterjakke</h3>
+          <p>Kr 1499</p>
+          <p>⭐️⭐️⭐️⭐️☆ 32 anmeldelser</p>
+        </div>
+        <div class="product-card">
+          <img src="Images/Jakke4.webp" alt="Lignende produkt 4">
+          <h3>The North Face Dunjakke</h3>
+          <p>Kr 3299</p>
+          <p>⭐️⭐️⭐️⭐️☆ 19 anmeldelser</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h3>BORZ</h3>
+    </div>
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+      <p><strong>Telefon:</strong> 69 00 80 00</p>
+      <p><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+      <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+    </div>
+    <div class="footer-links">
+      <h4>Snarveier</h4>
+      <ul>
+        <li><a href="products.html">Produkter</a></li>
+        <li><a href="categories.html">Kategorier</a></li>
+        <li><a href="contact.html">Kontakt oss</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Sosiale medier</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024. Alle rettigheter forbeholdt.</p>
+  </div>
+</footer>

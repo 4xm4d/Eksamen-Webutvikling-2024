@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!-- Header -->
+<header>
+  <div class="logo"><a href="index.html">BORZ</a></div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="product.html">Produkter</a></li>
+      <li><a href="index.html#categories">Kategorier</a></li>
+      <li><a href="index.html#footer">Kontakt oss</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Søke Felt -->
+  <div class="search-bar">
+    <form action="search.html" method="GET">
+      <input type="text" name="query" placeholder="Søk her..." aria-label="Søk">
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <div class="header-icons">
+    <a href="user.html"><img src="Ikoner/Ikoner/user-solid.svg" alt="Bruker" title="Min profil"></a>
+    <a href="checkout.html" class="cart-icon">
+      <img src="Ikoner/Ikoner/cart-shopping-solid.svg" alt="Handlekurv" title="Handlekurv">
+    </a>
+  </div>
+</header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Kasse</h1>
+
+    <!-- Handlekurv -->
+    <section class="shopping-bag">
+      <h2>1. Shoppingbagen din</h2>
+      <div class="cart-item">
+        <img src="Images/Jakke1.webp" alt="Produktbilde">
+        <div class="item-details">
+          <h3>PRODUCT NAME</h3>
+          <p>Kr 1999</p>
+          <p>Farge: Svart</p>
+          <div class="item-controls">
+            <label for="size">Størrelse:</label>
+            <select id="size">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="quantity">Antall:</label>
+            <input type="number" id="quantity" value="1" min="1">
+          </div>
+        </div>
+        <div class="item-actions">
+          <button class="favorite">♥</button>
+          <button class="remove">🗑</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opplysninger -->
+    <section class="customer-info">
+      <h2>2. Dine opplysninger</h2>
+      <form>
+        <div class="form-row">
+          <label for="first-name">Fornavn</label>
+          <input type="text" id="first-name" placeholder="Nora">
+        </div>
+        <div class="form-row">
+          <label for="last-name">Etternavn</label>
+          <input type="text" id="last-name" placeholder="Nordmann">
+        </div>
+        <div class="form-row">
+          <label for="address">Gateadresse</label>
+          <input type="text" id="address" placeholder="BRA Veien 4">
+        </div>
+        <div class="form-row half">
+          <label for="postal-code">Postnummer</label>
+          <input type="text" id="postal-code" placeholder="1752">
+        </div>
+        <div class="form-row half">
+          <label for="city">Poststed</label>
+          <input type="text" id="city" placeholder="Halden">
+        </div>
+        <div class="form-row">
+          <label for="email">E-post</label>
+          <input type="email" id="email" placeholder="noranordmann@hiof.no">
+        </div>
+        <div class="form-row">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" placeholder="+47 49 999 918">
+        </div>
+        <div class="form-row">
+          <button type="submit">Lagre</button>
+          <a href="#">Avbryt</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- Levering -->
+    <section class="delivery">
+      <h2>3. Levering</h2>
+      <div class="delivery-option">
+        <input type="radio" id="express-home" name="delivery" checked>
+        <label for="express-home">Express Hjemlevering - 59 kr (3-4 Virkedager)</label>
+      </div>
+      <div class="delivery-option">
+        <input type="radio" id="express-pickup" name="delivery">
+        <label for="express-pickup">Express Pakke til Utleveringssted - 59 kr (1-3 Virkedager)</label>
+      </div>
+      <div class="delivery-option">
+        <input type="radio" id="standard-home" name="delivery">
+        <label for="standard-home">Standard Hjemlevering - Gratis (5-8 Virkedager)</label>
+      </div>
+    </section>
+
+    <!-- Betaling -->
+    <section class="payment">
+      <h2>4. Betaling</h2>
+      <form>
+        <div class="form-row">
+          <label for="card-number">Kortnummer</label>
+          <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="form-row half">
+          <label for="expiry-date">Utløpsdato</label>
+          <input type="text" id="expiry-date" placeholder="MM/ÅÅ">
+        </div>
+        <div class="form-row half">
+          <label for="cvv">CVC/CVV</label>
+          <input type="text" id="cvv" placeholder="123">
+        </div>
+        <p>Totalt: <strong>2058 kr</strong></p>
+        <button type="submit">Fullfør kjøp</button>
+      </form>
+    </section>
+  </main>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>BORZ</h3>
+      </div>
+      <div class="footer-contact">
+        <h4>Kontakt</h4>
+        <p><strong>Adresse:</strong> B R A Veien 4, 1757 Halden</p>
+        <p><strong>Telefon:</strong> 69 00 80 00</p>
+        <p><strong>E-post:</strong> <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+        <p><strong>Åpningstider:</strong> Stenger 15:00</p>
+      </div>
+      <div class="footer-links">
+        <h4>Snarveier</h4>
+        <ul>
+          <li><a href="products.html">Produkter</a></li>
+          <li><a href="categories.html">Kategorier</a></li>
+          <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Sosiale medier</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
